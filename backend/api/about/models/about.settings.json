@@ -1,0 +1,34 @@
+{
+  "kind": "singleType",
+  "collectionName": "abouts",
+  "info": {
+    "name": "about"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "ownerName": {
+      "type": "string"
+    },
+    "aboutOwner": {
+      "type": "richtext"
+    },
+    "ownerImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "companyName": {
+      "type": "string"
+    },
+    "aboutCompany": {
+      "type": "richtext"
+    }
+  }
+}
