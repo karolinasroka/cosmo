@@ -1,0 +1,13 @@
+main {
+	.contact {
+		p {
+			margin: 0.5em 0;
+		}
+
+		@media (min-width: 769px) {
+			width: 40%;
+			padding-left: 60px;
+			float: right;
+		}
+	}
+}
