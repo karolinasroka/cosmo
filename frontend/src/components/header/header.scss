@@ -1,0 +1,32 @@
+header {
+	box-shadow: 0 0 5px 1px #b28062;
+	background: hsl(43, 33%, 96%);
+	height: 80px;
+
+	nav {
+		display: grid;
+		max-width: 1250px;
+		margin: 0 auto;
+		grid-template-columns: 3fr auto;
+		padding: 10px;
+	}
+
+	.logo {
+		width: 160px;
+		height: auto;
+	}
+
+	.nav-links {
+		padding-top: 10px;
+		a {
+			padding-left: 10px;
+			color: #a36848;
+			font-size: 1.5em;
+
+			&:hover {
+				color: #e2bda9;
+				text-decoration: none;
+			}
+		}
+	}
+}

@@ -41,13 +41,14 @@ const Contact = () => {
 						<h2>Kontakt</h2>
 						<p>{addressName}</p>
 						<p>
+							<i class="fas fa-map-marker-alt"></i>
 							<a href={mapsUrl}>{address}</a>
 						</p>
 						<p className="number">
-							<a href="tel:+48696767818">{phone}</a>
+							<a href={"tel:" + phone}>{phone}</a>
 						</p>
 						<p className="mail">
-							<a href="mailto:info@cosmopila.pl">{email}</a>
+							<a href={"mailto:" + email}>{email}</a>
 						</p>
 						<p>
 							<a href={facebookUrl}>Facebook</a>
