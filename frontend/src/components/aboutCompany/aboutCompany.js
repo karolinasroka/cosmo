@@ -18,19 +18,13 @@ const AboutCompany = () => {
 		}
 	`);
 
+	const { companyName, aboutCompany } = data.allStrapiAbout.edges[0].node;
+
 	return (
-		<>
-			{data.allStrapiAbout.edges.map(
-				({ node: { companyName, aboutCompany } }) => (
-					<section className="about-company">
-						<h2>{companyName}</h2>
-						<p>
-							<ReactMarkdown source={aboutCompany} />
-						</p>
-					</section>
-				)
-			)}
-		</>
+		<section className="about-company">
+			<h2>{companyName}</h2>
+			<ReactMarkdown source={aboutCompany} />
+		</section>
 	);
 };
 

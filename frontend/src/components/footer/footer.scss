@@ -6,37 +6,31 @@ footer {
 		margin: 0 auto;
 		max-width: 1250px;
 		display: flex;
-		color: #a36848;
 		justify-content: space-between;
+		padding: 20px;
 
-		@media (max-width: 700px) {
+		@media (max-width: 900px) {
 			flex-direction: column;
 		}
-
-		font-weight: 600;
-		padding: 13px;
 	}
 
 	section {
-		@media (max-width: 700px) {
+		@media (max-width: 900px) {
 			margin: 5px 0;
 		}
 	}
 
-	a {
-		color: #a36848;
-		@media (max-width: 700px) {
-			margin: 5px 0;
-		}
+	svg {
+		margin-right: 0.5em;
+	}
 
-		&:hover {
-			color: #c28f73;
-			text-decoration: none;
+	a {
+		@media (max-width: 900px) {
+			margin: 5px 0;
 		}
 	}
 
 	p {
-		color: #4d4d4d;
 		margin: 0;
 	}
 }

@@ -1,5 +1,5 @@
 header {
-	box-shadow: 0 0 5px 1px #b28062;
+	box-shadow: 0 0 10px 1px hsl(23, 34%, 54%);
 	background: hsl(43, 33%, 96%);
 	height: 80px;
 
@@ -8,25 +8,17 @@ header {
 		max-width: 1250px;
 		margin: 0 auto;
 		grid-template-columns: 3fr auto;
-		padding: 10px;
+		padding: 0 20px;
 	}
 
 	.logo {
+		padding-top: 10px;
 		width: 160px;
 		height: auto;
 	}
 
 	.nav-links {
-		padding-top: 10px;
-		a {
-			padding-left: 10px;
-			color: #a36848;
-			font-size: 1.5em;
-
-			&:hover {
-				color: #e2bda9;
-				text-decoration: none;
-			}
-		}
+		padding-top: 23px;
+		font-size: 1.5em;
 	}
 }

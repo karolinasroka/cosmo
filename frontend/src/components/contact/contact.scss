@@ -1,13 +1,22 @@
 main {
 	.contact {
-		p {
-			margin: 0.5em 0;
-		}
-
 		@media (min-width: 769px) {
 			width: 40%;
 			padding-left: 60px;
 			float: right;
+		}
+
+		ul {
+			list-style: none;
+			padding-left: 0;
+		}
+
+		li {
+			margin: 0.5em 0;
+		}
+
+		svg {
+			margin-right: 0.5em;
 		}
 	}
 }

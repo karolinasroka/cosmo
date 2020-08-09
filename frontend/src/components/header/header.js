@@ -32,7 +32,6 @@ const Header = () => {
 				</div>
 				<div className="nav-links">
 					<Link to="../oferta">Oferta</Link>
-					<Link to="/">Kontakt</Link>
 				</div>
 			</nav>
 		</header>

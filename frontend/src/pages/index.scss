@@ -1,0 +1,27 @@
+.start-page {
+	padding: 0 20px;
+	margin-top: 30px;
+
+	@media (min-width: 769px) {
+		margin-top: 80px;
+	}
+
+	section {
+		margin: 40px 0;
+
+		h2 {
+			margin: 0;
+			text-align: center;
+			color: #be876a;
+		}
+
+		@media (min-width: 769px) {
+			margin: 100px 0;
+		}
+	}
+
+	.main-logo {
+		max-width: 750px;
+		margin: 0 auto;
+	}
+}

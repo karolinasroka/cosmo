@@ -26,24 +26,22 @@ const AboutOwner = () => {
 		}
 	`);
 
+	const {
+		ownerImage,
+		ownerName,
+		aboutOwner,
+	} = data.allStrapiAbout.edges[0].node;
+
 	return (
-		<>
-			{data.allStrapiAbout.edges.map(
-				({ node: { ownerImage, ownerName, aboutOwner } }) => (
-					<section className="about-joanna" id="joanna">
-						<div className="picture">
-							<Img fluid={ownerImage.childImageSharp.fluid} />
-						</div>
-						<div className="description">
-							<h2>{ownerName}</h2>
-							<p>
-								<ReactMarkdown source={aboutOwner} />
-							</p>
-						</div>
-					</section>
-				)
-			)}
-		</>
+		<section className="about-joanna" id="joanna">
+			<div className="picture">
+				<Img fluid={ownerImage.childImageSharp.fluid} />
+			</div>
+			<div className="description">
+				<h2>{ownerName}</h2>
+				<ReactMarkdown source={aboutOwner} />
+			</div>
+		</section>
 	);
 };
 
