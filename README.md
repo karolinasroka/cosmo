@@ -1,5 +1,7 @@
 # Cosmo
 
+https://www.cosmopila.pl/
+
 React Gatsby frontend with Strapi CMS backend.
 
 
@@ -10,7 +12,29 @@ React Gatsby frontend with Strapi CMS backend.
 	cd ../frontend
 	yarn install
 
-You will need to fill out some required sections when first running Strapi.
+
+Create `backend/.env`:
+
+	PORT=1339
+
+
+Create `frontend/.env.development`:
+
+	API_URL="http://localhost:1339"
+
+
+### Strapi
+
+Run:
+
+	cd backend
+	yarn develop
+
+Go to the admin URL and:
+
+- Configure an admin user to your liking (prompted on first visit)
+- Roles & Permissions > Public: Check `find` and `findone` for all types and save
+- Fill out the required data in all of the "Single types"
 
 
 ## Development
