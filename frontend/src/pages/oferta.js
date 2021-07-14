@@ -13,6 +13,7 @@ const TestPage = () => {
 			allStrapiProduct {
 				edges {
 					node {
+						enabled
 						title
 						description
 						image {
@@ -36,8 +37,9 @@ const TestPage = () => {
 		<Layout>
 			<SEO title="Oferta Cosmo" />
 			<main>
-				{data.allStrapiProduct.edges.map(
-					({ node: { title, description, options, image } }) => (
+				{data.allStrapiProduct.edges
+					.filter(({ node: { enabled } }) => enabled)
+					.map(({ node: { title, description, options, image } }) => (
 						<article className="product">
 							<h2>{title}</h2>
 							<div className="product-image">
@@ -57,8 +59,7 @@ const TestPage = () => {
 								</dl>
 							</div>
 						</article>
-					)
-				)}
+					))}
 			</main>
 		</Layout>
 	);
